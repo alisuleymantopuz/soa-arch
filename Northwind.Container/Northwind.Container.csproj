@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B91E49C2-AA3E-423A-AF7B-F24B026125A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Container</RootNamespace>
+    <AssemblyName>Northwind.Container</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Facilities.WcfIntegration">
+      <HintPath>..\packages\Castle.WcfIntegrationFacility.3.3.0\lib\net45\Castle.Facilities.WcfIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Discovery" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Facilities\EntityFrameworkFacility.cs" />
+    <Compile Include="Facilities\InterceptorFacility.cs" />
+    <Compile Include="Installers\AssemblerInstaller.cs" />
+    <Compile Include="Installers\DatabaseContextInstaller.cs" />
+    <Compile Include="Installers\InfrastructureInstaller.cs" />
+    <Compile Include="Installers\InterceptorInstaller.cs" />
+    <Compile Include="Installers\ManagerInstaller.cs" />
+    <Compile Include="Installers\RepositoryInstaller.cs" />
+    <Compile Include="Installers\ServiceInstaller.cs" />
+    <Compile Include="Installers\TransformerInstaller.cs" />
+    <Compile Include="Installers\ValidatorInstaller.cs" />
+    <Compile Include="Interceptors\ExceptionHandlingInterceptor.cs" />
+    <Compile Include="Interceptors\LoggingInterceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj">
+      <Project>{2c3c769d-f13f-45d4-96cb-86acd09eca0d}</Project>
+      <Name>Northwind.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Domain.Mapping\Northwind.Infrastructure.EntityFramework.csproj">
+      <Project>{df4a7ad5-0e87-435f-b17c-ffa052168713}</Project>
+      <Name>Northwind.Infrastructure.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Domain.Repositories\Northwind.Domain.Repositories.csproj">
+      <Project>{fc46f823-bf66-4e03-adcc-dfc010ad86fb}</Project>
+      <Name>Northwind.Domain.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Domain.Validators\Northwind.Domain.Validators.csproj">
+      <Project>{8331e086-bece-447c-bf8a-82139f973fa1}</Project>
+      <Name>Northwind.Domain.Validators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Domain\Northwind.Domain.csproj">
+      <Project>{50fb51f7-44c1-498b-a4e5-c69ad6fe2bdf}</Project>
+      <Name>Northwind.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Infrastructure\Northwind.Infrastructure.csproj">
+      <Project>{ad27989a-f30d-4601-890e-f9b4656ce6c6}</Project>
+      <Name>Northwind.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Services.Mappers\Northwind.Services.Assemblers.csproj">
+      <Project>{574c38a6-d2f4-490e-bd8d-6f88c5790a86}</Project>
+      <Name>Northwind.Services.Assemblers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Services.Transformers\Northwind.Services.Transformers.csproj">
+      <Project>{607ff635-ae86-4f4a-ba35-e8982818e8d0}</Project>
+      <Name>Northwind.Services.Transformers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Services\Northwind.Services.csproj">
+      <Project>{3f7ca23f-3052-4331-8f74-c05168372dec}</Project>
+      <Name>Northwind.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

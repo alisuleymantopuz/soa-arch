@@ -1,0 +1,213 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Domain", "Northwind.Domain\Northwind.Domain.csproj", "{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Infrastructure.EntityFramework", "Northwind.Domain.Mapping\Northwind.Infrastructure.EntityFramework.csproj", "{DF4A7AD5-0E87-435F-B17C-FFA052168713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Infrastructure", "Northwind.Infrastructure\Northwind.Infrastructure.csproj", "{AD27989A-F30D-4601-890E-F9B4656CE6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Infrastructure.EntityFramework.Tests", "Northwind.Infrastructure.EntityFramework.Tests\Northwind.Infrastructure.EntityFramework.Tests.csproj", "{46B3EE46-5276-4E2A-A9C8-F79709D251E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Domain.Repositories", "Northwind.Domain.Repositories\Northwind.Domain.Repositories.csproj", "{FC46F823-BF66-4E03-ADCC-DFC010AD86FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Contracts", "Northwind.Contracts\Northwind.Contracts.csproj", "{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Domain.Validators", "Northwind.Domain.Validators\Northwind.Domain.Validators.csproj", "{8331E086-BECE-447C-BF8A-82139F973FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Exceptions", "Northwind.Exceptions\Northwind.Exceptions.csproj", "{74AA209C-4B6D-47F7-A05E-A9C05F469744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Services", "Northwind.Services\Northwind.Services.csproj", "{3F7CA23F-3052-4331-8F74-C05168372DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Services.Transformers", "Northwind.Services.Transformers\Northwind.Services.Transformers.csproj", "{607FF635-AE86-4F4A-BA35-E8982818E8D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Services.Assemblers", "Northwind.Services.Mappers\Northwind.Services.Assemblers.csproj", "{574C38A6-D2F4-490E-BD8D-6F88C5790A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Container", "Northwind.Container\Northwind.Container.csproj", "{B91E49C2-AA3E-423A-AF7B-F24B026125A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Application", "Northwind.Container.Application\Northwind.Application.csproj", "{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Infrastructure.Tests", "Northwind.Infrastructure.Tests\Northwind.Infrastructure.Tests.csproj", "{E95A92F2-92F1-43F4-B557-9D03D26F175C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.UI.Web", "Northwind.UI.Web\Northwind.UI.Web.csproj", "{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AE3C74DD-25D9-43EE-9A15-CA6CB4310DDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4797EF2A-10B6-466E-8DC3-DA1101CBCE8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BD43E737-677A-4222-9975-D2A7826D87AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2FCA452A-B194-4920-9383-DD27984F2464}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{033CFC59-5789-4A48-BD40-8A7EFD50285B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Web.Api", "Northwind.Web.Api\Northwind.Web.Api.csproj", "{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".DependencyGraphs", ".DependencyGraphs", "{17885778-8D1E-4960-B441-8635F02A441E}"
+	ProjectSection(SolutionItems) = preProject
+		ui-web-api-dependency-graph.dgml = ui-web-api-dependency-graph.dgml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://developmentastpz.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Northwind.Container\\Northwind.Container.csproj
+		SccProjectTopLevelParentUniqueName1 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName1 = Northwind.Container
+		SccLocalPath1 = Northwind.Container
+		SccProjectUniqueName2 = Northwind.Contracts\\Northwind.Contracts.csproj
+		SccProjectTopLevelParentUniqueName2 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName2 = Northwind.Contracts
+		SccLocalPath2 = Northwind.Contracts
+		SccProjectUniqueName3 = Northwind.Domain.Mapping\\Northwind.Infrastructure.EntityFramework.csproj
+		SccProjectTopLevelParentUniqueName3 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName3 = Northwind.Domain.Mapping
+		SccLocalPath3 = Northwind.Domain.Mapping
+		SccProjectUniqueName4 = Northwind.Domain.Repositories\\Northwind.Domain.Repositories.csproj
+		SccProjectTopLevelParentUniqueName4 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName4 = Northwind.Domain.Repositories
+		SccLocalPath4 = Northwind.Domain.Repositories
+		SccProjectUniqueName5 = Northwind.Domain.Validators\\Northwind.Domain.Validators.csproj
+		SccProjectTopLevelParentUniqueName5 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName5 = Northwind.Domain.Validators
+		SccLocalPath5 = Northwind.Domain.Validators
+		SccProjectUniqueName6 = Northwind.Domain\\Northwind.Domain.csproj
+		SccProjectTopLevelParentUniqueName6 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName6 = Northwind.Domain
+		SccLocalPath6 = Northwind.Domain
+		SccProjectUniqueName7 = Northwind.Exceptions\\Northwind.Exceptions.csproj
+		SccProjectTopLevelParentUniqueName7 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName7 = Northwind.Exceptions
+		SccLocalPath7 = Northwind.Exceptions
+		SccProjectUniqueName8 = Northwind.Infrastructure.EntityFramework.Tests\\Northwind.Infrastructure.EntityFramework.Tests.csproj
+		SccProjectTopLevelParentUniqueName8 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName8 = Northwind.Infrastructure.EntityFramework.Tests
+		SccLocalPath8 = Northwind.Infrastructure.EntityFramework.Tests
+		SccProjectUniqueName9 = Northwind.Infrastructure\\Northwind.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName9 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName9 = Northwind.Infrastructure
+		SccLocalPath9 = Northwind.Infrastructure
+		SccProjectUniqueName10 = Northwind.Services.Mappers\\Northwind.Services.Assemblers.csproj
+		SccProjectTopLevelParentUniqueName10 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName10 = Northwind.Services.Mappers
+		SccLocalPath10 = Northwind.Services.Mappers
+		SccProjectUniqueName11 = Northwind.Services.Transformers\\Northwind.Services.Transformers.csproj
+		SccProjectTopLevelParentUniqueName11 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName11 = Northwind.Services.Transformers
+		SccLocalPath11 = Northwind.Services.Transformers
+		SccProjectUniqueName12 = Northwind.Services\\Northwind.Services.csproj
+		SccProjectTopLevelParentUniqueName12 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName12 = Northwind.Services
+		SccLocalPath12 = Northwind.Services
+		SccProjectUniqueName13 = Northwind.Container.Application\\Northwind.Application.csproj
+		SccProjectTopLevelParentUniqueName13 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName13 = Northwind.Container.Application
+		SccLocalPath13 = Northwind.Container.Application
+		SccProjectUniqueName14 = Northwind.Infrastructure.Tests\\Northwind.Infrastructure.Tests.csproj
+		SccProjectTopLevelParentUniqueName14 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName14 = Northwind.Infrastructure.Tests
+		SccLocalPath14 = Northwind.Infrastructure.Tests
+		SccProjectUniqueName15 = Northwind.UI.Web\\Northwind.UI.Web.csproj
+		SccProjectTopLevelParentUniqueName15 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName15 = Northwind.UI.Web
+		SccLocalPath15 = Northwind.UI.Web
+		SccProjectUniqueName16 = Northwind.Web.Api\\Northwind.Web.Api.csproj
+		SccProjectTopLevelParentUniqueName16 = ArchitectureAPIAndAgularJS.sln
+		SccProjectName16 = Northwind.Web.Api
+		SccLocalPath16 = Northwind.Web.Api
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4A7AD5-0E87-435F-B17C-FFA052168713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4A7AD5-0E87-435F-B17C-FFA052168713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4A7AD5-0E87-435F-B17C-FFA052168713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4A7AD5-0E87-435F-B17C-FFA052168713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD27989A-F30D-4601-890E-F9B4656CE6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD27989A-F30D-4601-890E-F9B4656CE6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD27989A-F30D-4601-890E-F9B4656CE6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD27989A-F30D-4601-890E-F9B4656CE6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B3EE46-5276-4E2A-A9C8-F79709D251E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B3EE46-5276-4E2A-A9C8-F79709D251E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B3EE46-5276-4E2A-A9C8-F79709D251E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B3EE46-5276-4E2A-A9C8-F79709D251E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC46F823-BF66-4E03-ADCC-DFC010AD86FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC46F823-BF66-4E03-ADCC-DFC010AD86FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC46F823-BF66-4E03-ADCC-DFC010AD86FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC46F823-BF66-4E03-ADCC-DFC010AD86FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8331E086-BECE-447C-BF8A-82139F973FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8331E086-BECE-447C-BF8A-82139F973FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8331E086-BECE-447C-BF8A-82139F973FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8331E086-BECE-447C-BF8A-82139F973FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AA209C-4B6D-47F7-A05E-A9C05F469744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AA209C-4B6D-47F7-A05E-A9C05F469744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AA209C-4B6D-47F7-A05E-A9C05F469744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AA209C-4B6D-47F7-A05E-A9C05F469744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7CA23F-3052-4331-8F74-C05168372DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7CA23F-3052-4331-8F74-C05168372DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7CA23F-3052-4331-8F74-C05168372DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7CA23F-3052-4331-8F74-C05168372DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607FF635-AE86-4F4A-BA35-E8982818E8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607FF635-AE86-4F4A-BA35-E8982818E8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607FF635-AE86-4F4A-BA35-E8982818E8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607FF635-AE86-4F4A-BA35-E8982818E8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574C38A6-D2F4-490E-BD8D-6F88C5790A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574C38A6-D2F4-490E-BD8D-6F88C5790A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574C38A6-D2F4-490E-BD8D-6F88C5790A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574C38A6-D2F4-490E-BD8D-6F88C5790A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91E49C2-AA3E-423A-AF7B-F24B026125A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91E49C2-AA3E-423A-AF7B-F24B026125A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91E49C2-AA3E-423A-AF7B-F24B026125A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91E49C2-AA3E-423A-AF7B-F24B026125A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E95A92F2-92F1-43F4-B557-9D03D26F175C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E95A92F2-92F1-43F4-B557-9D03D26F175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E95A92F2-92F1-43F4-B557-9D03D26F175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E95A92F2-92F1-43F4-B557-9D03D26F175C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC46F823-BF66-4E03-ADCC-DFC010AD86FB} = {4797EF2A-10B6-466E-8DC3-DA1101CBCE8D}
+		{8331E086-BECE-447C-BF8A-82139F973FA1} = {4797EF2A-10B6-466E-8DC3-DA1101CBCE8D}
+		{50FB51F7-44C1-498B-A4E5-C69AD6FE2BDF} = {4797EF2A-10B6-466E-8DC3-DA1101CBCE8D}
+		{AD27989A-F30D-4601-890E-F9B4656CE6C6} = {AE3C74DD-25D9-43EE-9A15-CA6CB4310DDC}
+		{46B3EE46-5276-4E2A-A9C8-F79709D251E2} = {AE3C74DD-25D9-43EE-9A15-CA6CB4310DDC}
+		{E95A92F2-92F1-43F4-B557-9D03D26F175C} = {AE3C74DD-25D9-43EE-9A15-CA6CB4310DDC}
+		{DF4A7AD5-0E87-435F-B17C-FFA052168713} = {AE3C74DD-25D9-43EE-9A15-CA6CB4310DDC}
+		{3F7CA23F-3052-4331-8F74-C05168372DEC} = {2FCA452A-B194-4920-9383-DD27984F2464}
+		{607FF635-AE86-4F4A-BA35-E8982818E8D0} = {2FCA452A-B194-4920-9383-DD27984F2464}
+		{574C38A6-D2F4-490E-BD8D-6F88C5790A86} = {2FCA452A-B194-4920-9383-DD27984F2464}
+		{2C3C769D-F13F-45D4-96CB-86ACD09ECA0D} = {2FCA452A-B194-4920-9383-DD27984F2464}
+		{B91E49C2-AA3E-423A-AF7B-F24B026125A1} = {033CFC59-5789-4A48-BD40-8A7EFD50285B}
+		{7B4D96A7-424E-4AB5-B9CB-5F40D5BA3B1D} = {033CFC59-5789-4A48-BD40-8A7EFD50285B}
+		{74AA209C-4B6D-47F7-A05E-A9C05F469744} = {033CFC59-5789-4A48-BD40-8A7EFD50285B}
+		{A98A9EC7-832D-4F58-978D-3EADE1C5DC4D} = {BD43E737-677A-4222-9975-D2A7826D87AC}
+		{A60F92FF-5B5B-4BA6-B728-3D293DC6B3DB} = {BD43E737-677A-4222-9975-D2A7826D87AC}
+	EndGlobalSection
+EndGlobal

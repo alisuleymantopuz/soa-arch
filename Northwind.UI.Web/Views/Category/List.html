@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../Style/Default.css" rel="stylesheet" />
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Models/Category.js"></script>
+</head>
+<body ng-app="categories">
+    <h1>Categories</h1>
+    <div ng-controller="categoriesListController">
+        <ul>
+            <li ng-repeat="category in categories">{{category.name}} - {{category.description}}</li>
+        </ul>
+    </div>
+    <form ng-submit="submit()" ng-controller="categoriesAddController">
+        <div class="part">
+            <input id="Name" name="Name" type="text" ng-model="Name" required></input>
+            <input id="Description" name="Description" type="text" ng-model="Description" required></input>
+            <input type="submit" id="categoriesSubmit" value="Save" />
+        </div>
+    </form>
+
+    <div data-ng-controller="categoriesDeleteController">
+
+        <div class="part">
+            <select data-ng-model="selectedCategory" data-ng-options="c.name for c in categories">
+                <option value="" selected>Select</option>
+            </select>
+            <input type="button"  data-ng-click="delete()" value="Delete"/>
+        </div>
+    </div>
+
+</body>
+</html>

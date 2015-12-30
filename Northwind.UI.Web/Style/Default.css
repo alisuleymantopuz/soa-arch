@@ -1,0 +1,28 @@
+﻿* {
+    color: black;
+    font-family: Calibri;
+    margin: 0 auto;
+}
+
+ul, li {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+    li:hover {
+        font-weight: bold;
+    }
+
+h1 {
+    font-size: large;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    display: block;
+}
+.part {
+    margin: 10px;
+    padding: 5px;
+}
